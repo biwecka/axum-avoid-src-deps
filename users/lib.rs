@@ -19,6 +19,8 @@ async fn get_users() -> String {
 async fn create_user(State(s): State<Arc<Provider<'_>>>) -> String {
     println!("POST /users");
 
+    // This is where `nject` allowed me to use `.provide()` like this:
+    // `let tenant_service: &dyn ITenantService = s.provide();`
     let tenant_service: &dyn ITenantService = s.tenant_service;
     tenant_service.get();
 
