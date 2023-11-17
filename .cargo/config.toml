@@ -1,0 +1,30 @@
+[alias]
+
+r   = "run"
+rr  = "run --release"
+
+b   = "build"
+br  = "build --release"
+
+c   = "check"
+wc  = "watch -q -c -x c"
+
+wr  = "watch -q -c -x r"
+wrr = "watch -q -c -x rr"
+
+wb  = "watch -q -c -x b"
+wbr = "watch -q -c -x br"
+
+clp = "clippy --all-targets --all-features -- -D warnings -D clippy::unwrap_used"
+
+wdoc= "watch -q -c -x doc"
+
+[net]
+git-fetch-with-cli = true
+
+# DO NOT EDIT BELOW ############################################################
+# [target.x86_64-unknown-linux-gnu]
+# linker = "clang"
+# rustflags = [
+#     "-C", "link-arg=-fuse-ld=<path_to_mold_linker>",
+# ]

@@ -1,0 +1,9 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./Cargo.toml",
+        // "./app/Cargo.toml",
+        // "./modules/tenants/Cargo.toml",
+        // "./modules/users/Cargo.toml",
+        // "./shared/Cargo.toml"
+    ]
+}

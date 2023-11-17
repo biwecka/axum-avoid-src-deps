@@ -1,0 +1,17 @@
+[package]
+name = "tenants"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "lib.rs"
+
+[dependencies]
+interfaces = { path = "../interfaces" }
+nject = { workspace = true }
+
+# Axum
+axum = { workspace = true }
+hyper = { workspace = true }
+tokio = { workspace = true }
+tower = { workspace = true }

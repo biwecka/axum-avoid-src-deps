@@ -1,0 +1,25 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "app"
+path = "main.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# Workspace
+interfaces = { path = "../interfaces" }
+users = { path = "../users" }
+tenants = { path = "../tenants" }
+
+# General
+nject = { workspace = true }
+
+# Axum
+axum = { workspace = true }
+hyper = { workspace = true }
+tokio = { workspace = true }
+tower = { workspace = true }
